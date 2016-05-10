@@ -12,6 +12,6 @@ public:
 	void setFull();
 	bool getFull();
 	void setSize(int size);
-	item*content;
+	item**content;
 };
 

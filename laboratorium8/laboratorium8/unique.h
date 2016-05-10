@@ -9,5 +9,5 @@ public:
 	~unique();
 	std::string getCreator();
 	int getSpecialStats();
+	void setUnique(std::string creator, int specialStats);
 };
-
