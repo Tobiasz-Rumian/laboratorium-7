@@ -3,7 +3,7 @@
 class armorItem :
 	public item
 {
-	int defense;
+	int defensePoints;
 	int durability;
 	int minimumStrength;
 public:
@@ -12,6 +12,7 @@ public:
 	int getDefense();
 	int getDurability();
 	int getMinimumStrenght();
-	float defense(int attackValue, int heroDefense);
+	virtual float defense(int attackValue, int heroDefense);
+	void setArmorItem(int defensePoints, int durability, int minimumStrength);
 };
 

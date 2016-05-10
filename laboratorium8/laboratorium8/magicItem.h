@@ -10,5 +10,7 @@ public:
 	~magicItem();
 	int getRequiredMana();
 	int getMagicType();
+	static int basicMagicAttack;
+	void setMagicItem(int requiredMana, int magicType);
 };
 

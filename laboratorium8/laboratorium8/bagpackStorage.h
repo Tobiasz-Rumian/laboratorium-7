@@ -7,7 +7,7 @@ class bagpackStorage :
 	int reguiredStrenght;
 	hero*owner;
 public:
-	bagpackStorage();
+	bagpackStorage(int size);
 	~bagpackStorage();
 };
 

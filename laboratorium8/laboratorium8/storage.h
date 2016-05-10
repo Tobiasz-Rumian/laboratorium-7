@@ -4,12 +4,14 @@ class storage
 {
 	int size;
 	bool full;
-	item*content;
+	
 public:
-	storage();
+	storage(int size);
 	~storage();
 	int getSize();
 	void setFull();
 	bool getFull();
+	void setSize(int size);
+	item*content;
 };
 

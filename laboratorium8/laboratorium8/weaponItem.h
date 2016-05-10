@@ -13,5 +13,6 @@ public:
 	std::string getType();
 	void attack(int heroAttackPoints);
 	int getHandedness();
+	void setWeaponItem(int handedness, std::string type);
 };
 
