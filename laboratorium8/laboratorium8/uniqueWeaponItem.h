@@ -4,8 +4,10 @@
 class uniqueWeaponItem :
 	public weaponItem, unique
 {
+	
 public:
 	uniqueWeaponItem();
 	~uniqueWeaponItem();
+	float specialAttack(int heroAttackPoints, int heroAura);
 };
 
