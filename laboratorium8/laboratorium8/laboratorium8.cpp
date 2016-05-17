@@ -15,7 +15,7 @@ int main()
 		cin >> otworzyc;
 		if (otworzyc == 'T')
 		{
-			chestStorage chest("ciemny pokoj",5);
+			chestStorage chest("ciemny pokoj",4);
 			if (chest.getLocked())
 			{
 				cout << "cholera,zamknieta. Otworze ja.";
@@ -33,7 +33,37 @@ int main()
 				{
 					cout << i + 1 << ") " << bagpack.content[i]->getName() << endl;
 				}
-				
+				cout << "chyba powinienem sprawdzic wlasciwosci moich przedmiotow!" << endl;
+				cout << "tylko od ktorego zaczac?" << endl;
+				int zacz;
+				cin>> zacz;
+				cout << "DANE PRZEDMIOTU: " << bagpack.content[zacz - 1]->getName() << endl;
+				cout << bagpack.content[zacz - 1]->getValue() << endl;
+				cout << bagpack.content[zacz - 1]->getCondition() << endl;
+				cout << bagpack.content[zacz - 1]->getWeight() << endl;
+				cout << bagpack.content[zacz - 1]->getTyp() << endl;
+				cout << bagpack.content[zacz - 1]->getCondition() << endl;
+				cout << bagpack.content[zacz - 1]->getHandedness() << endl;
+				//cout << bagpack.content[zacz - 1]->get << endl;
+				//cout << bagpack.content[zacz - 1]->getCondition() << endl;
+				/*if (bagpack.content[zacz - 1]->getTyp == "unikatowa bron")
+				{
+
+				}
+				if (bagpack.content[zacz - 1]->getTyp == "unikatowa zbroja")
+				{
+
+				}
+				if (bagpack.content[zacz - 1]->getTyp == "zwoj")
+				{
+
+				}
+				if (bagpack.content[zacz - 1]->getTyp == "runa")
+				{
+
+				}
+				cout << bagpack.content[zacz - 1]-> << endl;
+				cout << bagpack.content[zacz - 1]-> << endl;*/
 			}
 		}
 	system("pause");

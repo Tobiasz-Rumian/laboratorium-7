@@ -12,7 +12,7 @@ public:
 	int getDefense();
 	int getDurability();
 	int getMinimumStrenght();
-	virtual float defense(int attackValue, int heroDefense);
 	void setArmorItem(int defensePoints, int durability, int minimumStrength);
+	float defense(int attackValue, int heroDefense);
 };
 
